@@ -2,9 +2,10 @@
 #![no_std]
 
 extern crate panic_halt;
-
+// github.com therealprof / microbit
 use cortex_m_rt::entry;
 use microbit::led::Display;
+use microbit::hal::i2c;
 use nrf51::Peripherals;
 use nrf51_hal::delay::Delay;
 use nrf51_hal::prelude::*;
