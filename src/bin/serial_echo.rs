@@ -19,6 +19,7 @@ fn main() -> ! {
         loop {
             let val = block!(rx.read()).unwrap();
             let _ = block!(tx.write(val));
+            cortex_m::asm::nop();
         }
     }
     panic!();
