@@ -7,6 +7,7 @@ use cortex_m_rt::entry;
 use nb::block;
 use nrf51::Peripherals;
 use nrf51_hal::prelude::*;
+use cortex_m::asm::*;
 use nrf51_hal::serial::{Serial, BAUD115200};
 
 #[entry]
@@ -19,7 +20,7 @@ fn main() -> ! {
         loop {
             let val = block!(rx.read()).unwrap();
             let _ = block!(tx.write(val));
-            cortex_m::asm::nop();
+            nop();   // comment 
         }
     }
     panic!();
