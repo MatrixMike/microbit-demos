@@ -17,3 +17,5 @@ error: build failed
 </code>
 Using geany 1.33 to edit and build other Rust programs.
 Geany reminds me about Cargo Test and Cargo Bench.
+Online builder reminds me about rustFmt
+
