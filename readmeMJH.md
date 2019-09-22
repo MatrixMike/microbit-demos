@@ -19,3 +19,9 @@ Using geany 1.33 to edit and build other Rust programs.
 Geany reminds me about Cargo Test and Cargo Bench.
 Online builder reminds me about rustFmt
 
+READ THIS
+The big factor to making everything compile is to use the latest versions so execute 
+<code>
+updateMe.sh
+</code>
+
