@@ -1,6 +1,6 @@
 #![no_main]
 #![no_std]
-
+// pleaqse don not expect this to compile properly under geany without more assistance
 extern crate panic_halt;
 // github.com therealprof / microbit
 use cortex_m_rt::entry;
@@ -11,6 +11,7 @@ use nrf51_hal::delay::Delay;
 use nrf51_hal::prelude::*;
 
 #[entry]
+/// set a pattern for leds
 fn main() -> ! {
     if let Some(p) = Peripherals::take() {
         let mut delay = Delay::new(p.TIMER0);
@@ -38,6 +39,7 @@ fn main() -> ! {
             [0, 1, 0, 1, 0],
             [1, 0, 1, 0, 1],
         ];
+// set another pattern for leds
         let checker_b = [
             [0, 1, 0, 1, 0],
             [1, 0, 1, 0, 1],
