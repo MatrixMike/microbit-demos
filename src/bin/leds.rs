@@ -1,6 +1,6 @@
 #![no_main]
 #![no_std]
-
+// pleaqse don not expect this to compile properly under geany without more assistance
 extern crate panic_halt;
 // github.com therealprof / microbit
 use core::fmt::Write;
@@ -13,6 +13,7 @@ use nrf51_hal::prelude::*;
 use nrf51_hal::serial::{Serial, BAUD115200};
 
 #[entry]
+/// set a pattern for leds
 fn main() -> ! {
 //	    let vector = vec![1, 3, 4, 5, 3];  // cannot find macro `vec!` in this scope
         let _vc = [1,2,3,4,5];
@@ -51,6 +52,7 @@ fn main() -> ! {
             [0, 1, 0, 1, 0],
             [1, 0, 1, 0, 1],
         ];
+// set another pattern for leds
         let checker_b = [
             [0, 1, 0, 1, 0],
             [1, 0, 1, 0, 1],
