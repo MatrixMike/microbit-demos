@@ -25,3 +25,8 @@ The big factor to making everything compile is to use the latest versions so exe
 updateMe.sh
 </code>
 
+ sudo apt install openocd
+./bin/flash leds
+./sendToBBC.sh 
+sudo apt install binutils-arm-none-eabi
+
