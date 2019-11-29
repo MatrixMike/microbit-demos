@@ -40,7 +40,7 @@ fn main() -> ! {
         let row1 = gpio.pin13.into_push_pull_output();
         let row2 = gpio.pin14.into_push_pull_output();
         let row3 = gpio.pin15.into_push_pull_output();
-        let mut leds = Display::new(
+        let mut leds = Display::new(    // note 9 columns and 3 rows
             col1, col2, col3, col4, col5, col6, col7, col8, col9, row1, row2, row3,
         );
 //https://www.mathworks.com/help/supportpkg/microbit/ref/5x5ledmatrix.html
@@ -56,9 +56,9 @@ fn main() -> ! {
         let checker_b = [
             [1, 1, 0, 1, 0],
             [1, 0, 1, 0, 1],
-            [0, 1, 0, 1, 0],
+            [1, 1, 1, 1, 0],
             [1, 0, 1, 0, 1],
-            [0, 1, 0, 1, 0],
+            [1, 1, 0, 1, 0],
         ];
 
         loop {

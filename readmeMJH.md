@@ -30,3 +30,8 @@ updateMe.sh
 ./sendToBBC.sh 
 sudo apt install binutils-arm-none-eabi
 
+<code>
+./bin/flash serial_buttons
+picocom -b 115200 /dev/ttyACM0
+</code>
+
