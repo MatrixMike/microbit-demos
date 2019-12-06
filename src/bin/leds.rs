@@ -1,6 +1,6 @@
 #![no_main]
 #![no_std]
-// pleaqse don not expect this to compile properly under geany without more assistance
+// please don not expect this to compile properly under geany without more assistance
 extern crate panic_halt;
 // github.com therealprof / microbit
 use core::fmt::Write;
@@ -56,9 +56,9 @@ fn main() -> ! {
         let checker_b = [
             [1, 1, 0, 1, 0],
             [1, 0, 1, 0, 1],
-            [1, 1, 1, 1, 0],
-            [1, 0, 1, 0, 1],
             [1, 1, 0, 1, 0],
+            [1, 0, 1, 0, 1],
+            [1, 1, 0, 1, 1],
         ];
 
         loop {

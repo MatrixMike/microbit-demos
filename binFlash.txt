@@ -1,0 +1,32 @@
+    Finished release [optimized] target(s) in 0.04s
+Open On-Chip Debugger 0.9.0 (2018-01-24-01:05)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : only one transport option; autoselect 'swd'
+cortex_m reset_config sysresetreq
+adapter speed: 1000 kHz
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : CMSIS-DAP: FW Version = 1.10
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 0 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 1000 kHz
+Info : SWD IDCODE 0x0bb11477
+Info : nrf51.cpu: hardware has 4 breakpoints, 2 watchpoints
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x00001404 msp: 0x20004000
+** Programming Started **
+auto erase enabled
+Warn : Unknown device (HWID 0x00000138)
+Warn : using fast async flash loader. This is currently supported
+Warn : only with ST-Link and CMSIS-DAP. If you have issues, add
+Warn : "set WORKAREASIZE 0" before sourcing nrf51.cfg to disable it
+wrote 7168 bytes from file target/thumbv6m-none-eabi/release/leds in 0.828893s (8.445 KiB/s)
+** Programming Finished **
+** Verify Started **
+verified 6304 bytes in 0.120995s (50.880 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
