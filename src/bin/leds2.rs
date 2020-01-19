@@ -65,6 +65,11 @@ fn main() -> ! {
             leds.display(&mut delay, checker_a, 1000);
             leds.display(&mut delay, checker_b, 1000);
         }
+     let  mut j = 0 ;
+     (0..5).flat_map(|x| x * 100 .. x * 110)
+        .enumerate()
+        .filter(|&(i, x)| (i + x) % 3 == 0)
+        .for_each(|(_i, x)| j=x);    // try these on BBC build
     }
     panic!();
 }
