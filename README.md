@@ -1,6 +1,11 @@
-# microbit-demos
-
-Rust demos running on the [BBC micro:bit](https://microbit.org/).
+<div align="center">
+  <h1>microbit-demos</h1>
+  <p>
+    <strong>
+      Rust demos running on the <a href="https://microbit.org/">BBC micro:bit</a>
+    </strong>
+  </p>
+</div>
 
 ## Demos
 
@@ -10,6 +15,8 @@ Rust demos running on the [BBC micro:bit](https://microbit.org/).
 - `serial_echo` - Echos any serial data received
 - `serial_random` - Generates random bytes and sent over serial
 - `snake` - Classic snake game
+
+https://user-images.githubusercontent.com/1206028/189038516-e71f4bc1-162b-4220-af4e-dbe14c5e3f00.mp4
 
 ## Dependencies
 
@@ -38,7 +45,7 @@ The micro:bit will automatically reboot and start running the demo.
 
 Some demos communicate over serial. For these demos start a console session in a
 separate terminal window. The provided shell script expects the USB console
-device at `/dev/ttyACM0`, update this if required.
+device at `/dev/ttyACM0`, update this if required. On macOS this may be something like `/dev/cu.usbmodem14412`.
 
 ```sh
 bin/console
